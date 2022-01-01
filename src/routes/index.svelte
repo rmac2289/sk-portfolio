@@ -1,84 +1,116 @@
 <script>
-    import { fade, fly } from "svelte/transition";
-  </script>
-  
-  <svelte:head>
-    <title>Ross MacDonald</title>
-  </svelte:head>
-  <div
-    in:fly={{ duration: 1000, y: 300, delay: 400 }}
-    class="page-box"
-  >
-    <div class="container">
-      <div class="badge">
-        <div class="hole">
-          </div>
-          <div class="image">
-            <img width="200" src="avatar.png" alt="avatar">
-          </div>
-          <div class="text">
-      <h2>Ross MacDonald</h2>
-      <div class="sub-header">
-        <h4>
-          Full Stack Software Engineer
-        </h4>
-        <h4 style="color: blue;">
-          <strong>Problem Solver</strong>
-        </h4>
-        <h4 style="color: purple;">
-          Leader
-        </h4>
+  import { fade, fly } from "svelte/transition";
+  import DiCodeBadge from "svelte-icons/di/DiCodeBadge.svelte";
+  import IoMdInformationCircle from "svelte-icons/io/IoMdInformationCircle.svelte";
+  import IoLogoLinkedin from "svelte-icons/io/IoLogoLinkedin.svelte";
+  let showLinks = false;
+  const toggleShowLinks = () => {
+    showLinks = !showLinks;
+  };
+</script>
+
+<svelte:head>
+  <title>Ross MacDonald</title>
+</svelte:head>
+<div in:fly={{ duration: 1000, y: 300, delay: 400 }} class="page-box">
+  <div class="container">
+    <div class="badge">
+      <div class="hole" />
+      <div class="image">
+        <img width="200" src="avatar.png" alt="avatar" />
+      </div>
+      <div class="text">
+        <h2>Ross MacDonald</h2>
+        <div class="sub-header">
+          <h4>Full Stack Software Engineer</h4>
+        </div>
+      </div>
+      <div class="links">
+        <div class="link">
+          <a href="https://www.linkedin.com/in/rsmacdonald/">
+            <IoLogoLinkedin />
+          </a>
+        </div>
+        <div class="link">
+          <a href="/">
+            <IoMdInformationCircle />
+          </a>
+        </div>
+        <div class="link">
+          <a href="/">
+            <DiCodeBadge />
+          </a>
         </div>
       </div>
     </div>
-    </div>
   </div>
-  
-  <style>
-    * {
-      font-family: "Roboto", sans-serif;
-    }
-    .badge {
-      width: 350px;
-      height: 550px;
-      background-image: linear-gradient(black 50%, transparent 50%);
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 5px solid black;
-      border-bottom: 30px solid black
-    }
-    .hole {
-      background: white;
-      height: 20px;
-      width: 60px;
-      margin-top: 15px;
-      border-radius: 5px
-    }
-    .image {
-      margin-top: 30px;
-    }
-    .text {
-      background: white;
-      border-radius: 5px;
-      padding: 15px;
-      margin-top: 10px;
-    }
-    .container {
-      max-width: 600px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 1rem;
-      min-height: 200px;
-    }
-    .page-box {
-      
-      transition: 0.75s all linear;
-    }
-    @media only screen and (min-width: 520px) {
-     
-    }
-  </style>
-  
+</div>
+
+<style>
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 15px;
+    color: white;
+  }
+  .link {
+    width: 50px;
+  }
+  .badge {
+    width: 350px;
+    height: 550px;
+    background-image: linear-gradient(black 60%, transparent 50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(8deg);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    position: relative;
+  }
+  .badge::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    border-bottom: 40px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .hole {
+    background: white;
+    height: 20px;
+    width: 60px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.75);
+  }
+  .image {
+    margin-top: 30px;
+  }
+  .text {
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    background: rgb(6, 16, 155);
+  }
+  .container {
+    padding: 5%;
+  }
+  .page-box {
+    transition: 0.75s all linear;
+  }
+  @media only screen and (min-width: 520px) {
+  }
+</style>

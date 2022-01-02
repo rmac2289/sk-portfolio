@@ -15,9 +15,13 @@
 <div in:fly={{ duration: 1000, y: 300, delay: 400 }} class="page-box">
   <div class="container">
     <div class="badge">
-      <div class="hole" />
+      <div class="hole">
+        <div class="ring">
+          <img class="string" src="ellipse.png" alt="ellipse" />
+        </div>
+      </div>
       <div class="image">
-        <img width="200" src="avatar.png" alt="avatar" />
+        <img width="180" src="headshot.png" alt="avatar" />
       </div>
       <div class="text">
         <h2>Ross MacDonald</h2>
@@ -61,6 +65,11 @@
   .link {
     width: 50px;
   }
+  a {
+    color: #000;
+  }
+  .string {
+  }
   .badge {
     width: 350px;
     height: 550px;
@@ -69,7 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: rotate(8deg);
+    transform: rotate(-8deg);
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
       0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -94,6 +103,12 @@
     margin-top: 15px;
     border-radius: 5px;
     box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.75);
+    position: relative;
+  }
+  .ring {
+    position: absolute;
+    top: -250px;
+    left: 0;
   }
   .image {
     margin-top: 30px;

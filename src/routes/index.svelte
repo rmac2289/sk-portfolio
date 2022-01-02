@@ -68,8 +68,6 @@
   a {
     color: #000;
   }
-  .string {
-  }
   .badge {
     width: 350px;
     height: 550px;
@@ -84,7 +82,6 @@
       0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
       0 100px 80px rgba(0, 0, 0, 0.12);
     position: relative;
-    border: 1px double rgba(0, 0, 0, 0.2);
   }
 
   .badge::after {
@@ -99,12 +96,12 @@
   }
 
   .hole {
-    background: white;
+    background: rgb(248, 226, 182);
     height: 20px;
     width: 60px;
     margin-top: 15px;
     border-radius: 5px;
-    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0 0 5px rgb(177, 155, 112);
     position: relative;
   }
   .ring {
@@ -121,12 +118,20 @@
     padding: 15px;
     margin-top: 10px;
     background: rgb(80, 42, 64);
+    box-shadow: -5px 5px 0px rgba(255, 200, 87), -10px 10px 0 #bdd9bf;
   }
   .container {
     padding: 5%;
   }
   .page-box {
     transition: 0.75s all linear;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 200, 87, 0.2) 50%,
+      rgb(189, 217, 191, 0.5) 50%
+    );
   }
   @media only screen and (min-width: 520px) {
   }

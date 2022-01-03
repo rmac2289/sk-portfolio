@@ -19,23 +19,7 @@
       <h4>Full Stack Software Engineer</h4>
     </div>
   </div>
-  <div class="links">
-    <div class="link">
-      <a href="https://www.linkedin.com/in/rsmacdonald/">
-        <IoLogoLinkedin />
-      </a>
-    </div>
-    <div class="link">
-      <a href="/">
-        <IoMdInformationCircle />
-      </a>
-    </div>
-    <div class="link">
-      <a href="/">
-        <DiCodeBadge />
-      </a>
-    </div>
-  </div>
+  <div class="links" />
 </div>
 
 <style>
@@ -47,16 +31,10 @@
     border-radius: 15px;
     color: white;
   }
-  .link {
-    width: 50px;
-  }
-  a {
-    color: #000;
-  }
   .badge {
-    width: 350px;
-    height: 550px;
-    background-image: linear-gradient(#2e4052 60%, white 50%);
+    width: 300px;
+    height: 450px;
+    background-image: linear-gradient(#2e4052 70%, white 50%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -75,7 +53,7 @@
     left: 0;
     width: 100%;
     content: "";
-    border-bottom: 40px solid #2e4052;
+    border-bottom: 30px solid #2e4052;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }

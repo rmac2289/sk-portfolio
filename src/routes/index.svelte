@@ -1,6 +1,7 @@
 <script>
   import Badge from "../components/Badge.svelte";
   import { fade, fly } from "svelte/transition";
+  import Stickies from "../components/Stickies.svelte";
 </script>
 
 <svelte:head>
@@ -10,6 +11,7 @@
   <div class="laptop"><img width="1000" src="laptop.png" alt="laptop" /></div>
   <div class="container">
     <Badge />
+    <Stickies />
   </div>
 </div>
 
@@ -19,18 +21,18 @@
   }
 
   .container {
-    padding: 10%;
+    padding: 5%;
+    display: flex;
   }
   .laptop {
     position: absolute;
-    top: -350px;
+    top: -450px;
     left: 50%;
     width: 1000px;
     margin-left: -500px;
     transform: rotate(20deg);
   }
   .page-box {
-    transition: 0.75s all linear;
     position: relative;
     height: 100vh;
     width: 100vw;

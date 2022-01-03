@@ -7,7 +7,7 @@
   <title>Ross MacDonald</title>
 </svelte:head>
 <div in:fly={{ duration: 1000, y: 300, delay: 400 }} class="page-box">
-  <div class="laptop"><img width="1000" src="laptop4.png" alt="laptop" /></div>
+  <div class="laptop"><img width="1000" src="laptop.png" alt="laptop" /></div>
   <div class="container">
     <Badge />
   </div>

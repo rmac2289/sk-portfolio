@@ -37,6 +37,7 @@
     background-image: linear-gradient(#2e4052 70%, white 50%);
     border-radius: 10px;
     display: flex;
+    z-index: 4;
     flex-direction: column;
     align-items: center;
     transform: rotate(-7deg);

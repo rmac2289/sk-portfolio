@@ -1,7 +1,7 @@
 <script>
   import Badge from "../components/Badge.svelte";
   import { fade, fly } from "svelte/transition";
-  import Stickies from "../components/Stickies.svelte";
+  import Pad from "../components/Pad.svelte";
 </script>
 
 <svelte:head>
@@ -11,7 +11,7 @@
   <div class="laptop"><img width="1000" src="laptop.png" alt="laptop" /></div>
   <div class="container">
     <Badge />
-    <Stickies />
+    <Pad />
   </div>
 </div>
 

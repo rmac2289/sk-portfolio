@@ -5,16 +5,25 @@
   <div id="top" />
   <div id="pattern">
     <div id="content">
-      <h2><a href="/">- About</a></h2>
-      <h2><a href="/">- Experience</a></h2>
-      <h2><a href="/">- Contact</a></h2>
-      <h2><a href="/">- Resume</a></h2>
-      <h2><a href="/">- Projects</a></h2>
+      <div class="link-div">
+        <h2><a href="/experience">- Experience</a></h2>
+      </div>
+      <div class="link-div">
+        <h2><a href="/contact">- Contact</a></h2>
+      </div>
+      <div class="link-div">
+        <h2><a href="/resume">- Resume</a></h2>
+      </div>
+      <div class="link-div">
+        <h2><a href="/mywork">- Projects</a></h2>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
+  .link-div {
+  }
   a {
     text-decoration: none;
     color: inherit;
@@ -35,19 +44,16 @@
     transform-origin: center;
     transition: 0.25s linear;
   }
-  h2:nth-child(1) > a:before {
-    width: 80px;
-  }
-  h2:nth-child(2) > a:before {
+  .link-div:nth-child(1) > h2 > a:before {
     width: 140px;
   }
-  h2:nth-child(3) > a:before {
+  .link-div:nth-child(2) > h2 > a:before {
     width: 110px;
   }
-  h2:nth-child(4) > a:before {
+  .link-div:nth-child(3) > h2 > a:before {
     width: 100px;
   }
-  h2:nth-child(5) > a:before {
+  .link-div:nth-child(4) > h2 > a:before {
     width: 105px;
   }
   h2 > a:hover:before,
@@ -110,5 +116,8 @@
     font-size: 28px;
     letter-spacing: 1px;
     word-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 </style>

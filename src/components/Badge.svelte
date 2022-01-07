@@ -1,7 +1,4 @@
 <script>
-  import DiCodeBadge from "svelte-icons/di/DiCodeBadge.svelte";
-  import IoMdInformationCircle from "svelte-icons/io/IoMdInformationCircle.svelte";
-  import IoLogoLinkedin from "svelte-icons/io/IoLogoLinkedin.svelte";
 </script>
 
 <div class="badge">

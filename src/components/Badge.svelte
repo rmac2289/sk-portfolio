@@ -34,7 +34,7 @@
   .badge {
     width: 300px;
     height: 450px;
-    background-image: linear-gradient(#2e4052 70%, white 50%);
+    background-image: linear-gradient(#2e4052 65%, white 50%);
     border-radius: 10px;
     display: flex;
     z-index: 4;

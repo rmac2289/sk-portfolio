@@ -29,6 +29,7 @@
     top: -450px;
     left: 50%;
     width: 1000px;
+    opacity: 0.75;
     margin-left: -500px;
     transform: rotate(20deg);
   }

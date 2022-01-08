@@ -59,7 +59,7 @@
   h2 > a:hover:before,
   h2 > a:focus:before {
     visibility: visible;
-    transform: scaleX(1) rotate(-5deg);
+    transform: scaleX(1) rotate(-5deg) skewY(5deg);
   }
   #top {
     position: absolute;

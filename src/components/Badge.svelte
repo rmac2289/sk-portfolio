@@ -1,7 +1,8 @@
 <script>
+  import { fly } from "svelte/transition";
 </script>
 
-<div class="badge">
+<div in:fly={{ y: -100 }} class="badge">
   <div class="hole">
     <div class="ring">
       <img class="string" src="ellipse.png" alt="ellipse" />
